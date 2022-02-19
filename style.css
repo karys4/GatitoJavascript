@@ -55,3 +55,33 @@ button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.817);
 }
+
+.lineContainer {
+    position: relative;
+}
+
+#linea {
+    position: absolute;
+    display: block;
+    background-color: red;
+}
+
+.lineHorizontal {
+    position: absolute;
+    display: block;
+    height: 10px;
+    background-color: red;
+    width: 100%;
+    top: 85px;
+    left: 0px;
+}
+
+.lineVertical {
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: red;
+    width: 10px;
+    top: 0px;
+    left: 0px;
+}

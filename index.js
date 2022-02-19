@@ -71,6 +71,15 @@ const verificarVictoria = () => {
 
     
     if (forma1 || forma2 || forma3 || forma4 || forma5 || forma6 || forma7 || forma8) {
+        
+        //Dibujar línea roja
+        const linea = document.getElementById("linea");
+        
+        linea.style.height = "10px";
+        linea.style.width = "600px";
+        linea.style.top = "80px";
+        linea.style.left = "0px";
+        
         alert(`Los ganadores son las ${turno ? "O" : "X"}`);
         victoria = true;
     } else {
@@ -100,6 +109,11 @@ const reload = () => {
     div7.innerText = "";
     div8.innerText = "";
     div9.innerText = "";
+
+    linea.style.height = "0px";
+    linea.style.width = "0px";
+    linea.style.top = "0px";
+    linea.style.left = "0px";
 
     turno = false;
     victoria =false;
