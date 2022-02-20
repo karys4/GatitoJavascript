@@ -81,18 +81,82 @@ const verificarVictoria = () => {
             div3.innerText === div5.innerText && 
             div3.innerText === div7.innerText &&
             div3.innerText !== "";
+
+        //let formas = [forma1,forma2,forma3,forma4,forma5,forma6,forma7,forma8];    
             
 
     
     if (forma1 || forma2 || forma3 || forma4 || forma5 || forma6 || forma7 || forma8) {
         
-        //Dibujar línea roja
-        /*const linea = document.getElementById("linea");
+        //Dibujar línea 
+        const linea = document.getElementById("linea");
+
+        if (forma1) {
+            linea.style.height = "10px";
+            linea.style.width = "600px";
+            linea.style.top = "270px";
+            linea.style.left = "0px";
+        } else if (forma2) {
+            linea.style.height = "10px";
+            linea.style.width = "600px";
+            linea.style.top = "470px";
+            linea.style.left = "0px";
+        }  else if (forma3) {
+            linea.style.height = "10px";
+            linea.style.width = "600px";
+            linea.style.top = "670px";
+            linea.style.left = "0px";
+        }  else if (forma4) {
+            linea.style.height = "600px";
+            linea.style.width = "10px";
+            linea.style.top = "200px";
+            linea.style.left = "90px";
+        }  else if (forma5) {
+            linea.style.height = "600px";
+            linea.style.width = "10px";
+            linea.style.top = "200px";
+            linea.style.left = "290px";
+        }  else if (forma6) {
+            linea.style.height = "600px";
+            linea.style.width = "10px";
+            linea.style.top = "200px";
+            linea.style.left = "500px";
+
+            //TODO: Agregar líneas diagonales para forma7 y forma8
+        }  else if (forma7) {
+            linea.style.height = "600px";
+            linea.style.width = "10px";
+            linea.style.top = "200px";
+            linea.style.left = "90px";
+            linea.style.rotate("80");
+        }  else if (forma8) {
+            linea.style.height = "600px";
+            linea.style.width = "10px";
+            linea.style.top = "200px";
+            linea.style.left = "90px";
+            linea.style.rotate("80");
+        }  
+
         
-        linea.style.height = "10px";
-        linea.style.width = "600px";
-        linea.style.top = "80px";
-        linea.style.left = "0px";*/
+        
+        //TODO: Intentar hacerlo con un switch usando el array formas.
+        /*switch(formas){
+
+            case formas[0]:
+            linea.style.height = "10px";
+            linea.style.width = "600px";
+            linea.style.top = "270px";
+            linea.style.left = "0px";
+            break;
+
+            case forma2:
+            linea.style.height = "10px";
+            linea.style.width = "600px";
+            linea.style.top = "400px";
+            linea.style.left = "0px";
+            break;
+        }*/
+        
         
         alert(`Los ganadores son las ${turno ? "O" : "X"}`);
         victoria = true;

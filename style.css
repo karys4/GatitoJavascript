@@ -96,7 +96,7 @@ button:hover {
 #linea {
     position: absolute;
     display: block;
-    background-color: red;
+    background-color: green;
 }
 
 .lineHorizontal {
