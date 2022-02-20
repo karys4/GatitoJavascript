@@ -1,14 +1,28 @@
 let turno = false;
 let victoria = false;
 let contador = 0;
+let turnoX = document.getElementById("turnoX");
+let turnoO = document.getElementById("turnoO");
+turnoX.style.backgroundColor = "green";
+
+
 
 const handleClick = (event) => {
     const { id } = event.target;
     const div = document.getElementById(id);
-
+ 
     if (div.innerText === "" && victoria === false){
         div.innerText = turno ? "O" : "X";
+
+        if (div.innerText == "X") {
+            turnoX.style.backgroundColor = "black";
+            turnoO.style.backgroundColor = "green";
         
+        } else {
+            turnoX.style.backgroundColor = "green";
+            turnoO.style.backgroundColor = "black";
+
+        } 
         verificarVictoria();
         turno = !turno;
     }    
@@ -73,12 +87,12 @@ const verificarVictoria = () => {
     if (forma1 || forma2 || forma3 || forma4 || forma5 || forma6 || forma7 || forma8) {
         
         //Dibujar línea roja
-        const linea = document.getElementById("linea");
+        /*const linea = document.getElementById("linea");
         
         linea.style.height = "10px";
         linea.style.width = "600px";
         linea.style.top = "80px";
-        linea.style.left = "0px";
+        linea.style.left = "0px";*/
         
         alert(`Los ganadores son las ${turno ? "O" : "X"}`);
         victoria = true;
@@ -118,6 +132,8 @@ const reload = () => {
     turno = false;
     victoria =false;
     contador = 0;
+    turnoX.style.backgroundColor = "green";
+    turnoO.style.backgroundColor = "black";
 
 };
 

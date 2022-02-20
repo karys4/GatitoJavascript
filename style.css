@@ -38,6 +38,39 @@
     cursor: pointer;
 }
 
+h2 {
+    text-align: center;
+}
+
+#turnoX {
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    outline: none;
+    border: 0px;
+    border-radius: 0px;
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    cursor: none;
+}
+
+#turnoO {
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    outline: none;
+    border: 0px;
+    border-radius: 0px;
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    cursor: none;
+}
 button {
     padding: 20px 10px;
     background-color: black;
