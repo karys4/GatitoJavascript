@@ -121,21 +121,19 @@ const verificarVictoria = () => {
             linea.style.width = "10px";
             linea.style.top = "200px";
             linea.style.left = "500px";
-
-            //TODO: Agregar líneas diagonales para forma7 y forma8
         }  else if (forma7) {
             linea.style.height = "600px";
             linea.style.width = "10px";
-            linea.style.top = "200px";
-            linea.style.left = "90px";
-            linea.style.rotate("80");
+            linea.style.top = "250px";
+            linea.style.left = "360px";
+            linea.style.transform = 'rotate(140deg)';
         }  else if (forma8) {
             linea.style.height = "600px";
             linea.style.width = "10px";
-            linea.style.top = "200px";
-            linea.style.left = "90px";
-            linea.style.rotate("80");
-        }  
+            linea.style.top = "250px";
+            linea.style.left = "220px";
+            linea.style.transform = 'rotate(230deg)';
+        } 
 
         
         
@@ -192,6 +190,7 @@ const reload = () => {
     linea.style.width = "0px";
     linea.style.top = "0px";
     linea.style.left = "0px";
+    linea.style.transform = '';
 
     turno = false;
     victoria =false;
